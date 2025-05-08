@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+
+
+  <title>Login</title>
+  <style>
+   
+    h1{
+        color: #FEE8A1;
+        text-align: initial;
+        font-family: "Lilita One", sans-serif;
+        text-shadow: 2px 2px 4px #00000061;
+        -webkit-text-stroke: 2px #3C4E20;
+        
+    }
+    body {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      padding: 20px;
+      background-size: 102em;
+      background-image:url(https://sdmntprwestus.oaiusercontent.com/files/00000000-2a28-6230-aaee-5018a67c43e8/raw?se=2025-04-29T13%3A07%3A34Z&sp=r&sv=2024-08-04&sr=b&scid=3c9d55f6-9564-58a4-9262-8572779be8f3&skoid=4ae7b564-2531-470e-8ddb-6913f4bee2ee&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-04-29T10%3A14%3A46Z&ske=2025-04-30T10%3A14%3A46Z&sks=b&skv=2024-08-04&sig=hyTuZ2sNkGJqHtynDBwjFkbwVJoau3fKsL18CwqcR4s%3D)
+    }
+    .form-container {
+      background-color: rgba(255, 255, 255, 0.74);
+      padding: 28px;
+      max-width: 400px;
+      margin: auto;
+      border-radius: 34px;
+      box-shadow: 0 0 10px rgba(4, 4, 4, 0.69);
+      margin-top: 103px;
+    }
+    input{
+      width: 96%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    select{
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #FEE8A1;
+    background-color: #359A3C;
+    border: none;
+    border-radius: 15px;
+   box-shadow: 0 9px #2a7c2f;
+   margin-left: 150px;
+    }
+
+    button:hover {background-color: #3e8e41}
+
+    button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+  </style>
+</head>
+<body>
+    <h1>Sustainfy</h1>
+<div class="form-container">
+    
+  <h2>Login</h2>
+  <form action="/login" method="POST">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="senha">Senha:</label>
+    <input type="password" id="senha" name="senha" required>
+
+    <label for="tipoUsuario">Tipo de Usuário:</label>
+    <select id="tipoUsuario" name="tipoUsuario" required>
+      <option value="">Selecione...</option>
+      <option value="administrador">Visitante</option>
+      <option value="colaborador">Coordenador</option>
+      <option value="cliente">Inspetor</option>
+    </select>
+
+    <button type="submit">Entrar</button>
+  </form>
+</div>
+
+</body>
+</html>

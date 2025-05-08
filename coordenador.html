@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Painel do Coordenador</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #333;
+      margin-top: 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .ocorrencia {
+      background-color: #f9f9f9;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-left: 4px solid #4CAF50;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>Ocorrências</h2>
+    <!-- Lista de ocorrências (exemplo estático, pode vir do PHP depois) -->
+    <div class="ocorrencia">[28/04/2025] - Cliente relatou erro no site.</div>
+    <!-- Substitua essas divs por um loop PHP se desejar -->
+  </div>
+  
+  <div class="container">
+    <h2>Registros de Vendas</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID do Produto</th>
+          <th>Data</th>
+          <th>Hora</th>
+          <th>Nome</th>
+          <th>Preço</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Exemplo de dados (substituir por loop PHP depois) -->
+        <tr>
+          <td>1</td>
+          <td>2025-04-29</td>
+          <td>10:34</td>
+          <td>
+            Sacola ecológica</td>
+          <td>R$ 25,00</td>
+        </tr>
+        <!-- Aqui você pode gerar dinamicamente as linhas com PHP -->
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>
